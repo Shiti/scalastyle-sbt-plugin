@@ -17,7 +17,8 @@ resolvers += "sonatype-releases" at "https://oss.sonatype.org/content/repositori
 publishTo := Some("Sonatype Snapshots Nexus" at "https://oss.sonatype.org/content/repositories/snapshots")
 
 libraryDependencies ++= Seq(
-  "org.scalastyle" %% "scalastyle" % "0.4.0"
+  "org.scalastyle" %% "scalastyle" % "0.5.0-SNAPSHOT",
+  "com.typesafe" % "config" % "1.2.0"
 )
 
 publishTo <<= version { (v: String) =>
